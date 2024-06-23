@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<div className='flex flex-1 flex-col justify-center items-center h-full'>
 			<Link to='/about' className='decoration-transparent'>
-				<pre className='select-none text-blue-200'>{ASCII_ART}</pre>
+				<pre className='select-none'>{ASCII_ART}</pre>
 			</Link>
 
 			<p className='mt-3'>
