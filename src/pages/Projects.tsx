@@ -4,6 +4,7 @@ import List from '../component/List';
 import ListItem from '../component/ListItem';
 import { classes } from '../util';
 import websitePreview from '../assets/preview.png';
+import textcatPreview from '../assets/textcat preview.png';
 
 const Project = (props: {
 	image?: string;
@@ -64,9 +65,15 @@ export default function Projects() {
 					]}
 				/>
 				<Project
+					image={textcatPreview}
 					name='TextCat'
 					description='A small place for people to share text.'
 					links={[
+						{
+							name: 'Go to',
+							url: 'https://textcat.andrie.uk.to',
+							className: 'text-red-400',
+						},
 						{
 							name: 'Git',
 							url: 'https://github.com/andriemc/textcat',
